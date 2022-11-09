@@ -6,17 +6,17 @@
 #include "net.h"
 #include <iostream>
 using namespace std;
-string plate_chars[68] = { "¾©", "»¦", "½ò", "Óå", "¼½", "½ú", "ÃÉ", "ÁÉ", "¼ª", "ºÚ",
-         "ËÕ", "Õã", "Íî", "Ãö", "¸Ó", "Â³", "Ô¥", "¶õ", "Ïæ", "ÔÁ",
-         "¹ğ", "Çí", "´¨", "¹ó", "ÔÆ", "²Ø", "ÉÂ", "¸Ê", "Çà", "Äş",
-         "ĞÂ",
+string plate_chars[68] = { "äº¬", "æ²ª", "æ´¥", "æ¸", "å†€", "æ™‹", "è’™", "è¾½", "å‰", "é»‘",
+         "è‹", "æµ™", "çš–", "é—½", "èµ£", "é²", "è±«", "é„‚", "æ¹˜", "ç²¤",
+         "æ¡‚", "ç¼", "å·", "è´µ", "äº‘", "è—", "é™•", "ç”˜", "é’", "å®",
+         "æ–°",
          "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
          "A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
          "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V",
          "W", "X", "Y", "Z", "I", "O", "-"
 };
 
-//Õâ¸öº¯ÊıÊÇ¹Ù·½Ìá¹©µÄÓÃÓÚ´òÓ¡Êä³öµÄtensor
+//è¿™ä¸ªå‡½æ•°æ˜¯å®˜æ–¹æä¾›çš„ç”¨äºæ‰“å°è¾“å‡ºçš„tensor
     void pretty_print(const ncnn::Mat & m)
     {
         for (int q = 0; q < m.c; q++)
@@ -36,11 +36,11 @@ string plate_chars[68] = { "¾©", "»¦", "½ò", "Óå", "¼½", "½ú", "ÃÉ", "ÁÉ", "¼ª",
         }
     }
 
-    int main2()
+    int main()
     {
-        //¶¨ÒåÄ£ĞÍµÄÍøÂç
+        //å®šä¹‰æ¨¡å‹çš„ç½‘ç»œ
         ncnn::Net net;
-        //¼ÓÔØÄ£ĞÍ
+        //åŠ è½½æ¨¡å‹
         //net.load_param("clf-sim.param");
         //net.load_model("clf-sim.bin");
 
@@ -49,24 +49,24 @@ string plate_chars[68] = { "¾©", "»¦", "½ò", "Óå", "¼½", "½ú", "ÃÉ", "ÁÉ", "¼ª",
         net.load_model("lpr2d.bin");
         //net.load_model("lpr2d-sim.bin");
 
-        //Ê¹ÓÃopencvÒÔ»Ò¶ÈÍ¼¶ÁÈ¡Í¼Æ¬
+        //ä½¿ç”¨opencvä»¥ç°åº¦å›¾è¯»å–å›¾ç‰‡
         //cv::Mat img = cv::imread("C:/Users/Administrator/Desktop/test.jpg");
         cv::Mat img = cv::imread("88.jpg");
-        //»ñÈ¡Í¼Æ¬µÄ¿í
+        //è·å–å›¾ç‰‡çš„å®½
         int w = img.cols;
-        //»ñÈ¡Í¼Æ¬µÄ¸ß
+        //è·å–å›¾ç‰‡çš„é«˜
         int h = img.rows;
         cout << w << endl << h<<endl;
         cv::imshow("aa", img);
         cv::waitKey(0);
 
-        //½«OpenCVµÄÍ¼Æ¬×ªÎªncnn¸ñÊ½µÄÍ¼Æ¬,²¢ÇÒ½«Í¼Æ¬Ëõ·Åµ½224¡Á224Ö®¼ä
+        //å°†OpenCVçš„å›¾ç‰‡è½¬ä¸ºncnnæ ¼å¼çš„å›¾ç‰‡,å¹¶ä¸”å°†å›¾ç‰‡ç¼©æ”¾åˆ°224Ã—224ä¹‹é—´
         //ncnn::Mat in = ncnn::Mat::from_pixels_resize(img.data, ncnn::Mat::PIXEL_GRAY, w, h, 24, 94);
         //ncnn::Mat in = ncnn::Mat::from_pixels_resize(img.data, ncnn::Mat::PIXEL_BGR2RGB, w, h, 94, 24);
         ncnn::Mat in = ncnn::Mat::from_pixels_resize(img.data, ncnn::Mat::PIXEL_BGR, w, h, 94, 24);
         float mean[3] = { 127.5, 127.5, 127.5 };
         float norm[3] = { 0.0078125,0.0078125,0.0078125 };
-        //¶ÔÍ¼Æ¬½øĞĞ¹éÒ»»¯,½«ÏñËØ¹éÒ»»¯µ½-1~1Ö®¼ä
+        //å¯¹å›¾ç‰‡è¿›è¡Œå½’ä¸€åŒ–,å°†åƒç´ å½’ä¸€åŒ–åˆ°-1~1ä¹‹é—´
         in.substract_mean_normalize(mean, norm);
 
         
@@ -74,19 +74,19 @@ string plate_chars[68] = { "¾©", "»¦", "½ò", "Óå", "¼½", "½ú", "ÃÉ", "ÁÉ", "¼ª",
 
         ncnn::Extractor ex = net.create_extractor();
         ex.set_light_mode(true);
-        //ÉèÖÃÏß³Ì¸öÊı
+        //è®¾ç½®çº¿ç¨‹ä¸ªæ•°
         ex.set_num_threads(1);
         cout << in.c << endl;
         cout << in.h << endl;
         cout << in.w << endl;
         //cout << in.d << endl;
-        //½«Í¼Æ¬·ÅÈëµ½ÍøÂçÖĞ,½øĞĞÇ°ÏòÍÆÀí
+        //å°†å›¾ç‰‡æ”¾å…¥åˆ°ç½‘ç»œä¸­,è¿›è¡Œå‰å‘æ¨ç†
         //ex.input("input.1", in);
         ex.input("input.1", in);
-        cout << "ÊäÈë1:" << in.channel(0)[1] << endl;
+        cout << "è¾“å…¥1:" << in.channel(0)[1] << endl;
         ncnn::Mat feat;
         ncnn::Mat feat0;
-        //»ñÈ¡ÍøÂçµÄÊä³ö½á¹û
+        //è·å–ç½‘ç»œçš„è¾“å‡ºç»“æœ
         //ex.extract("110_splitncnn_1", feat);
         ex.extract("130", feat0); 
         ex.extract("131", feat);
@@ -107,14 +107,14 @@ string plate_chars[68] = { "¾©", "»¦", "½ò", "Óå", "¼½", "½ú", "ÃÉ", "ÁÉ", "¼ª",
         for (int q = 0; q < m.c; q++)
         {
             float prebs[18];
-            for (int x = 0; x < m.w; x++)  //±éÀúÊ®°Ë¸ö³µÅÆÎ»ÖÃ
+            for (int x = 0; x < m.w; x++)  //éå†åå…«ä¸ªè½¦ç‰Œä½ç½®
             {
                 const float* ptr = m.channel(q);
                 float preb[68];
-                for (int y = 0; y < m.h; y++)  //±éÀú68¸ö×Ö·û´®Î»ÖÃ
+                for (int y = 0; y < m.h; y++)  //éå†68ä¸ªå­—ç¬¦ä¸²ä½ç½®
                 {
                     //printf("%f ", ptr[x]);
-                    preb[y] = ptr[x];  //½«18¸ö
+                    preb[y] = ptr[x];  //å°†18ä¸ª
                     ptr += m.w;
                 }
                 int max_num_index = max_element(preb, preb + 68) - preb;
@@ -123,7 +123,7 @@ string plate_chars[68] = { "¾©", "»¦", "½ò", "Óå", "¼½", "½ú", "ÃÉ", "ÁÉ", "¼ª",
                 //printf("------------------------\n");
             }
 
-            //È¥ÖØ¸´¡¢È¥¿Õ°×
+            //å»é‡å¤ã€å»ç©ºç™½
             vector<int> no_repeat_blank_label{};
             int pre_c = prebs[0];
             if (pre_c != 67) {
@@ -141,17 +141,17 @@ string plate_chars[68] = { "¾©", "»¦", "½ò", "Óå", "¼½", "½ú", "ÃÉ", "ÁÉ", "¼ª",
                 pre_c = value;
             }
 
-            // ÏÂÃæ½øĞĞ³µÅÆlable°´ÕÕ×Öµä½øĞĞ×ª»¯Îª×Ö·û´®
+            // ä¸‹é¢è¿›è¡Œè½¦ç‰ŒlableæŒ‰ç…§å­—å…¸è¿›è¡Œè½¬åŒ–ä¸ºå­—ç¬¦ä¸²
             string no_repeat_blank_c = "";
             for (int hh : no_repeat_blank_label) {
                 //cout<<"hh:" << hh << endl;
                 no_repeat_blank_c += plate_chars[hh];
             }
-            cout << "µ¥¸ö³µÅÆ:" << no_repeat_blank_c << endl;
+            cout << "å•ä¸ªè½¦ç‰Œ:" << no_repeat_blank_c << endl;
 
             final_plate_str.push_back(no_repeat_blank_c);
             for (string hhh : final_plate_str) {
-                cout << "ËùÓĞ³µÅÆ:" << hhh << endl;
+                cout << "æ‰€æœ‰è½¦ç‰Œ:" << hhh << endl;
                 finale_plate += hhh;
             }
         }
