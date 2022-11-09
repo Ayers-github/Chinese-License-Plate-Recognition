@@ -34,4 +34,4 @@ ex.extract("131", feat)
 ```
 中的131为上一步中的输出name即可。运行ncnn_demo，可以成功识别车牌，注意仅仅能识别车牌区域。
 
-有问题可以提issues 或者加qq群:871797331 询问。群主是https://github.com/we0091234/Chinese_license_plate_detection_recognition项目所有者。
+有问题可以提issues 或者加qq群:871797331 询问。群主是https://github.com/we0091234/Chinese_license_plate_detection_recognition 项目所有者。
