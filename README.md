@@ -3,7 +3,7 @@
 
 ## 此分支为实现车牌识别的ncnn c++版本，20221109暂时上线了LPRnet的ncnn c++版本（仅支持对车牌区域的的车牌识别），后续会增加yolov5车牌关键点检测以及角度矫正、车牌颜色模型的ncnn版本。
 # 步骤
-1、将lprnet的pytorch模型中的3D卷积算子替换为2D，可以直接将文件LPRNet.py替换为此分支的文件；
+1、将https://github.com/sirius-ai/LPRNet_Pytorch 项目的pytorch模型中的3D卷积算子替换为2D，可以直接将文件LPRNet.py替换为此分支的文件；
 
 2、将pytorch模型导出为onnx模型，可以参考lpr_export.py：
 
