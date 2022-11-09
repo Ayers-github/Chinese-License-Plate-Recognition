@@ -1,7 +1,7 @@
 # Chinese-License-Plate-Recognition
 中国多车牌检测、车牌角度矫正、车牌识别、危险品车辆识别
 
-## 此分支为实现车牌识别的ncnn c++版本
+## 此分支为实现车牌识别的ncnn c++版本，20221109暂时上线了LPRnet的ncnn c++版本（仅支持对车牌区域的的车牌识别）。
 # 步骤
 1、将lprnet的pytorch模型中的3D卷积算子替换为2D，可以直接将文件LPRNet.py替换为此分支的文件；
 
