@@ -24,7 +24,7 @@ onnxsim lpr2d.onnx lpr2d-sim.onnx
 onnx2ncnn.exe lpr2d-sim.onnx lpr2d.param lpr2d.bin
 ```
 
-5、将lpr2d.param拖至https://netron.app/页面，查看网络的最后一层的output的name，如我这是131
+5、将lpr2d.param拖至 https://netron.app/ 页面，查看网络的最后一层的output的name，如我这是131
 ![image](https://user-images.githubusercontent.com/57164239/200736606-6eec929f-aaea-4e4e-8f34-a4ec5bc40d2a.png)
 输入层同理。此处为input.1。
 
