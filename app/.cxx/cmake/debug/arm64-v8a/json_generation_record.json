@@ -1,0 +1,602 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 24 min SDK version: arm64-v8a",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Trying to locate CMake in local SDK repository.",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "- CMake found in SDK at \u0027D:\\sdk\\cmake\\3.10.2.4988404\u0027 had version \u00273.10.2\u0027",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "CMake \u00273.18.1\u0027 found in SDK did not match requested version \u00273.10.2\u0027.",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "CMake \u00273.22.1\u0027 found in SDK did not match requested version \u00273.10.2\u0027.",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "CMake \u00273.6.0\u0027 found in SDK did not match requested version \u00273.10.2\u0027.",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\\android_gradle_build.json due to:",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "- command changed from previous, will remove stale json folder",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\u0027",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "created folder \u0027D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\u0027",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : D:\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe\narguments : \n-HD:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\n-DCMAKE_FIND_ROOT_PATH\u003dD:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\prefab\\arm64-v8a\\prefab\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\android.toolchain.cmake\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_NDK\u003dD:\\sdk\\ndk\\24.0.8215888\n-DANDROID_PLATFORM\u003dandroid-24\n-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\n-DCMAKE_ANDROID_NDK\u003dD:\\sdk\\ndk\\24.0.8215888\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\n-DCMAKE_MAKE_PROGRAM\u003dD:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d24\n-BD:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\n-GNinja\njvmArgs : \n\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "[\u003d\u003d \"CMake Server\" \u003d\u003d[\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "]\u003d\u003d \"CMake Server\" \u003d\u003d]\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/src/main/jni\",\n  \"buildDirectory\": \"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a\",\n  \"generator\": \"Ninja\"\n}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_FIND_ROOT_PATH\\u003dD:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\.cxx\\\\cmake\\\\debug\\\\prefab\\\\arm64-v8a\\\\prefab\",\n    \"-DCMAKE_BUILD_TYPE\\u003dDebug\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003dD:\\\\sdk\\\\ndk\\\\24.0.8215888\\\\build\\\\cmake\\\\android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003darm64-v8a\",\n    \"-DANDROID_NDK\\u003dD:\\\\sdk\\\\ndk\\\\24.0.8215888\",\n    \"-DANDROID_PLATFORM\\u003dandroid-24\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003darm64-v8a\",\n    \"-DCMAKE_ANDROID_NDK\\u003dD:\\\\sdk\\\\ndk\\\\24.0.8215888\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003dD:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\build\\\\intermediates\\\\cmake\\\\debug\\\\obj\\\\arm64-v8a\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003dD:\\\\sdk\\\\cmake\\\\3.10.2.4988404\\\\bin\\\\ninja.exe\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d24\"\n  ]\n}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at D:/sdk/ndk/24.0.8215888/build/cmake/android-legacy.toolchain.cmake:415 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\u0027s built-in compiler identification.\\nCall Stack (most recent call first):\\n  D:/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake:54 (include)\\n  D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\\n  CMakeLists.txt\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "WARN",
+    "message": "CMake Warning at D:/sdk/ndk/24.0.8215888/build/cmake/android-legacy.toolchain.cmake:415 (message):\r\n  An old version of CMake is being used that cannot automatically detect\r\n  compiler attributes.  Compiler identification is being bypassed.  Some\r\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\r\n  CMake\u0027s built-in compiler identification.\r\nCall Stack (most recent call first):\r\n  D:/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake:54 (include)\r\n  D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\r\n  CMakeLists.txt\r\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at D:/sdk/ndk/24.0.8215888/build/cmake/android-legacy.toolchain.cmake:415 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\u0027s built-in compiler identification.\\nCall Stack (most recent call first):\\n  D:/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake:54 (include)\\n  D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "WARN",
+    "message": "CMake Warning at D:/sdk/ndk/24.0.8215888/build/cmake/android-legacy.toolchain.cmake:415 (message):\r\n  An old version of CMake is being used that cannot automatically detect\r\n  compiler attributes.  Compiler identification is being bypassed.  Some\r\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\r\n  CMake\u0027s built-in compiler identification.\r\nCall Stack (most recent call first):\r\n  D:/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake:54 (include)\r\n  D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\r\n  D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\r\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compiler ABI info",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":65,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compiler ABI info - done",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compile features",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":96,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":126,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":155,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features - done\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compile features - done",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working CXX compiler: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":184,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working CXX compiler: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compiler ABI info",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":211,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compiler ABI info - done",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compile features",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":237,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":262,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":287,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":311,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features - done\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compile features - done",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":334,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":356,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":377,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP_C: -fopenmp\u003dlibomp  \",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Found OpenMP_C: -fopenmp\u003dlibomp  ",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":398,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP_CXX: -fopenmp\u003dlibomp  \",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Found OpenMP_CXX: -fopenmp\u003dlibomp  ",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenMP: TRUE   \",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Found OpenMP: TRUE   ",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread.h\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Looking for pthread.h",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":418,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread.h - found\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Looking for pthread.h - found",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread_create\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Looking for pthread_create",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":438,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Looking for pthread_create - found\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Looking for pthread_create - found",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found Threads: TRUE  \",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Found Threads: TRUE  ",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found Vulkan: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/libvulkan.so  \",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Found Vulkan: D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/24/libvulkan.so  ",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Found OpenCV: D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/src/main/jni/opencv_m (found version \\\"4.5.4\\\") \",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Found OpenCV: D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/src/main/jni/opencv_m (found version \"4.5.4\") ",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring done\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Configuring done",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"type\":\"reply\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"compute\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Generating\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"message\":\"Generating done\",\"type\":\"message\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Generating done",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"type\":\"reply\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"cmakeInputs\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"buildFiles\":[{\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindOpenMP.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageMessage.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageMessage.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindThreads.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckLibraryExists.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckSymbolExists.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckIncludeFile.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CheckIncludeFile.c.in\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeConfigurableFile.in\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageMessage.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindVulkan.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageMessage.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake\",\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageMessage.cmake\"]},{\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists.txt\",\"D:/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake\",\"D:/sdk/ndk/24.0.8215888/build/cmake/android-legacy.toolchain.cmake\",\"D:/sdk/ndk/24.0.8215888/build/cmake/platforms.cmake\",\"D:/sdk/ndk/24.0.8215888/build/cmake/compiler_id.cmake\",\"D:/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/ncnn/ncnnConfig.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/OSDependentTargets.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/OSDependentTargets-release.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/OGLCompilerTargets.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/OGLCompilerTargets-release.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/glslangTargets.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/glslangTargets-release.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/SPIRVTargets.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/SPIRVTargets-release.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/ncnn/ncnn.cmake\",\"ncnn-20220729-android-vulkan/arm64-v8a/lib/cmake/ncnn/ncnn-release.cmake\",\"opencv_m/sdk/native/jni/OpenCVConfig-version.cmake\",\"opencv_m/sdk/native/jni/OpenCVConfig.cmake\",\"opencv_m/sdk/native/jni/abi-arm64-v8a/OpenCVConfig.cmake\",\"opencv_m/sdk/native/jni/abi-arm64-v8a/OpenCVModules.cmake\",\"opencv_m/sdk/native/jni/abi-arm64-v8a/OpenCVModules-release.cmake\"]},{\"isCMake\":false,\"isTemporary\":true,\"sources\":[\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/FindOpenMP/OpenMPTryFlag.c\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/FindOpenMP/OpenMPCheckVersion.c\",\"../../../.cxx/cmake/debug/arm64-v8a/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp\"]}],\"cmakeRootDirectory\":\"D:/sdk/cmake/3.10.2.4988404/share/cmake-3.10\",\"cookie\":\"\",\"inReplyTo\":\"cmakeInputs\",\"sourceDirectory\":\"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/src/main/jni\",\"type\":\"reply\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"codemodel\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"configurations\":[{\"name\":\"Debug\",\"projects\":[{\"buildDirectory\":\"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a\",\"name\":\"Project\",\"sourceDirectory\":\"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/src/main/jni\",\"targets\":[{\"artifacts\":[\"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov5ncnn.so\"],\"buildDirectory\":\"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -std\u003dgnu++11\",\"defines\":[\"yolov5ncnn_EXPORTS\"],\"includePath\":[{\"isSystem\":true,\"path\":\"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/src/main/jni/ncnn-20220729-android-vulkan/arm64-v8a/include/ncnn\"},{\"isSystem\":true,\"path\":\"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/src/main/jni/opencv_m/sdk/native/jni/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"yolov5ncnn_jnitest.cpp\"]}],\"fullName\":\"libyolov5ncnn.so\",\"linkFlags\":\"-static-libstdc++ -Wl,--build-id\u003dsha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\ncnn-20220729-android-vulkan\\\\arm64-v8a\\\\lib\\\\libncnn.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\opencv_m\\\\sdk\\\\native\\\\staticlibs\\\\arm64-v8a\\\\libopencv_core.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\opencv_m\\\\sdk\\\\native\\\\staticlibs\\\\arm64-v8a\\\\libopencv_features2d.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\opencv_m\\\\sdk\\\\native\\\\staticlibs\\\\arm64-v8a\\\\libopencv_highgui.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\opencv_m\\\\sdk\\\\native\\\\staticlibs\\\\arm64-v8a\\\\libopencv_imgproc.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\opencv_m\\\\sdk\\\\native\\\\staticlibs\\\\arm64-v8a\\\\libopencv_photo.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\opencv_m\\\\sdk\\\\native\\\\staticlibs\\\\arm64-v8a\\\\libopencv_video.a -ljnigraphics -fopenmp -static-openmp D:\\\\sdk\\\\ndk\\\\24.0.8215888\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\sysroot\\\\usr\\\\lib\\\\aarch64-linux-android\\\\24\\\\libvulkan.so D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\ncnn-20220729-android-vulkan\\\\arm64-v8a\\\\lib\\\\libglslang.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\ncnn-20220729-android-vulkan\\\\arm64-v8a\\\\lib\\\\libSPIRV.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\ncnn-20220729-android-vulkan\\\\arm64-v8a\\\\lib\\\\libMachineIndependent.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\ncnn-20220729-android-vulkan\\\\arm64-v8a\\\\lib\\\\libOGLCompiler.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\ncnn-20220729-android-vulkan\\\\arm64-v8a\\\\lib\\\\libOSDependent.a -pthread D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\ncnn-20220729-android-vulkan\\\\arm64-v8a\\\\lib\\\\libGenericCodeGen.a -landroid -ljnigraphics D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\opencv_m\\\\sdk\\\\native\\\\staticlibs\\\\arm64-v8a\\\\libopencv_imgproc.a D:\\\\to_rockey\\\\github_pro\\\\Chinese-License-Plate-Recognition\\\\Chinese-License-Plate-Recognition-ncnn-android\\\\ncnn-android-yolov5-master\\\\app\\\\src\\\\main\\\\jni\\\\opencv_m\\\\sdk\\\\native\\\\staticlibs\\\\arm64-v8a\\\\libopencv_core.a -ldl -lm -llog -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"yolov5ncnn\",\"sourceDirectory\":\"D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/src/main/jni\",\"sysroot\":\"D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "write build output D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\\build_output.txt",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\\build_command.txt",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed without problems",
+    "file": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a"
+  }
+]

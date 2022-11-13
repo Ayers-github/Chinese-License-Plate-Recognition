@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="app_name">车牌识别（仅识别车牌区域0929）</string>-->
+    <string name="app_name">车牌识别测试版本</string>
+</resources>

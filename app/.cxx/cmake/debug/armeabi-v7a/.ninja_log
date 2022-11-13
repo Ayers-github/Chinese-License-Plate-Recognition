@@ -1,0 +1,13 @@
+# ninja log v5
+1	1229	686142528	CMakeFiles/yolov5ncnn.dir/opencv_demo.cpp.o	41afc4defe84725c
+1230	1733	686142529	D:/ncnn-android-yolov5-master/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libyolov5ncnn.so	7e9deb77bab7fa3d
+3	1273	686235116	CMakeFiles/yolov5ncnn.dir/yolov5ncnn_jnitest.cpp.o	d9c7ef6992e18b32
+1274	1771	686235117	D:/ncnn-android-yolov5-master/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libyolov5ncnn.so	e1698f88de13b292
+5	1076	686913685	CMakeFiles/yolov5ncnn.dir/opencv_demo.cpp.o	41afc4defe84725c
+1076	1557	686913686	D:/ncnn-android-yolov5-master/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libyolov5ncnn.so	e1698f88de13b292
+3	1160	686922180	CMakeFiles/yolov5ncnn.dir/opencv_demo.cpp.o	41afc4defe84725c
+1160	1762	686922180	D:/ncnn-android-yolov5-master/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libyolov5ncnn.so	e1698f88de13b292
+2	1238	687442907	CMakeFiles/yolov5ncnn.dir/yolov5ncnn_jnitest.cpp.o	d9c7ef6992e18b32
+1238	1744	687442907	D:/ncnn-android-yolov5-master/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libyolov5ncnn.so	1f9f215dbe1262d1
+4	2212	687937464	CMakeFiles/yolov5ncnn.dir/yolov5ncnn_jnitest.cpp.o	d9c7ef6992e18b32
+2212	3145	687937465	D:/ncnn-android-yolov5-master/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libyolov5ncnn.so	1f9f215dbe1262d1

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/buttonImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择需要识别的图片" />
+    <Button
+        android:id="@+id/buttonDetect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="识别-CPU" />
+    <Button
+        android:id="@+id/buttonDetectGPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="识别-GPU" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/lprtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="请先选择图片，再点击按钮进行车牌检测、车牌识别、车牌颜色识别！"/>
+
+</LinearLayout>

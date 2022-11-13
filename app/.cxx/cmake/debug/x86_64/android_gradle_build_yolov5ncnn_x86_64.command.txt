@@ -1,0 +1,7 @@
+Executable : D:\sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+D:\to_rockey\github_pro\Chinese-License-Plate-Recognition\Chinese-License-Plate-Recognition-ncnn-android\ncnn-android-yolov5-master\app\.cxx\cmake\debug\x86_64
+yolov5ncnn
+jvmArgs : 
+

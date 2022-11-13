@@ -1,0 +1,54 @@
+{
+  "buildFiles": [
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\OGLCompilerTargets.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\ncnn\\ncnnConfig.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\OSDependentTargets-release.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\OpenCVConfig.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\abi-armeabi-v7a\\OpenCVConfig.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\SPIRVTargets-release.cmake",
+    "D:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\android.toolchain.cmake",
+    "D:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\android-legacy.toolchain.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\SPIRVTargets.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\ncnn\\ncnn-release.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\OGLCompilerTargets-release.cmake",
+    "D:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\platforms.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\glslangTargets.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\glslangTargets-release.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\abi-armeabi-v7a\\OpenCVModules-release.cmake",
+    "D:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\compiler_id.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\OSDependentTargets.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\OpenCVConfig-version.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\abi-armeabi-v7a\\OpenCVModules.cmake",
+    "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\cmake\\ncnn\\ncnn.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "yolov5ncnn-Debug-armeabi-v7a": {
+      "artifactName": "yolov5ncnn",
+      "buildCommand": "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" yolov5ncnn",
+      "abi": "armeabi-v7a",
+      "output": "D:\\ncnn-android-yolov5-master\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libyolov5ncnn.so",
+      "runtimeFiles": [
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\libncnn.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\armeabi-v7a\\libopencv_core.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\armeabi-v7a\\libopencv_features2d.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\armeabi-v7a\\libopencv_highgui.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\armeabi-v7a\\libopencv_imgproc.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\armeabi-v7a\\libopencv_photo.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\armeabi-v7a\\libopencv_video.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\libglslang.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\libSPIRV.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\libMachineIndependent.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\libOGLCompiler.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\libOSDependent.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\armeabi-v7a\\lib\\libGenericCodeGen.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\armeabi-v7a\\libopencv_imgproc.a",
+        "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\armeabi-v7a\\libopencv_core.a"
+      ]
+    }
+  }
+}

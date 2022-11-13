@@ -1,0 +1,54 @@
+{
+  "buildFiles": [
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\OSDependentTargets.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\abi-arm64-v8a\\OpenCVModules.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\SPIRVTargets.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\OpenCVConfig.cmake",
+    "D:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\android.toolchain.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\ncnn\\ncnn.cmake",
+    "D:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\android-legacy.toolchain.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\glslangTargets-release.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\abi-arm64-v8a\\OpenCVModules-release.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\CMakeLists.txt",
+    "D:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\platforms.cmake",
+    "D:\\sdk\\ndk\\24.0.8215888\\build\\cmake\\compiler_id.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\OGLCompilerTargets.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\OGLCompilerTargets-release.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\ncnn\\ncnnConfig.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\OSDependentTargets-release.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\glslangTargets.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\OpenCVConfig-version.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\SPIRVTargets-release.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\cmake\\ncnn\\ncnn-release.cmake",
+    "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\jni\\abi-arm64-v8a\\OpenCVConfig.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "yolov5ncnn-Debug-arm64-v8a": {
+      "artifactName": "yolov5ncnn",
+      "buildCommand": "D:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\.cxx\\cmake\\debug\\arm64-v8a\" yolov5ncnn",
+      "abi": "arm64-v8a",
+      "output": "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libyolov5ncnn.so",
+      "runtimeFiles": [
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\libncnn.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\arm64-v8a\\libopencv_core.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\arm64-v8a\\libopencv_features2d.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\arm64-v8a\\libopencv_highgui.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\arm64-v8a\\libopencv_imgproc.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\arm64-v8a\\libopencv_photo.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\arm64-v8a\\libopencv_video.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\libglslang.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\libSPIRV.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\libMachineIndependent.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\libOGLCompiler.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\libOSDependent.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\ncnn-20220729-android-vulkan\\arm64-v8a\\lib\\libGenericCodeGen.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\arm64-v8a\\libopencv_imgproc.a",
+        "D:\\to_rockey\\github_pro\\Chinese-License-Plate-Recognition\\Chinese-License-Plate-Recognition-ncnn-android\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\opencv_m\\sdk\\native\\staticlibs\\arm64-v8a\\libopencv_core.a"
+      ]
+    }
+  }
+}
