@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/ncnn-android-yolov5-master/app/.cxx/cmake/debug/armeabi-v7a",
-  "command": "D:\\sdk\\ndk\\24.0.8215888\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi24 --sysroot=D:/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dyolov5ncnn_EXPORTS -isystem D:/ncnn-android-yolov5-master/app/src/main/jni/ncnn-20220729-android-vulkan/armeabi-v7a/include/ncnn -isystem D:/ncnn-android-yolov5-master/app/src/main/jni/opencv_m/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -std=gnu++11 -o CMakeFiles\\yolov5ncnn.dir\\yolov5ncnn_jnitest.cpp.o -c D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\yolov5ncnn_jnitest.cpp",
-  "file": "D:\\ncnn-android-yolov5-master\\app\\src\\main\\jni\\yolov5ncnn_jnitest.cpp"
-}
-]

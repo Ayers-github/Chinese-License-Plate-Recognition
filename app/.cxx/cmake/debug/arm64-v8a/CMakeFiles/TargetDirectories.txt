@@ -1,3 +1,0 @@
-D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/yolov5ncnn.dir
-D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
-D:/to_rockey/github_pro/Chinese-License-Plate-Recognition/Chinese-License-Plate-Recognition-ncnn-android/ncnn-android-yolov5-master/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir

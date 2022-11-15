@@ -36,19 +36,112 @@ static ncnn::PoolAllocator g_workspace_pool_allocator;
 #define ASSERT(status, ret)     if (!(status)) { return ret; }
 #define ASSERT_FALSE(status)    ASSERT(status, false)
 static ncnn::Net yolov5;
-static ncnn::Net lpr;
+static ncnn::Net crnn;
 static ncnn::Net color_net;
-string plate_chars[68] = { "京", "沪", "津", "渝", "冀", "晋", "蒙", "辽", "吉", "黑",
-                           "苏", "浙", "皖", "闽", "赣", "鲁", "豫", "鄂", "湘", "粤",
-                           "桂", "琼", "川", "贵", "云", "藏", "陕", "甘", "青", "宁",
-                           "新",
-                           "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
-                           "A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
-                           "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V",
-                           "W", "X", "Y", "Z", "I", "O", "-"
-};
+//static string plate_chars[68] = { "京", "沪", "津", "渝", "冀", "晋", "蒙", "辽", "吉", "黑",
+//                           "苏", "浙", "皖", "闽", "赣", "鲁", "豫", "鄂", "湘", "粤",
+//                           "桂", "琼", "川", "贵", "云", "藏", "陕", "甘", "青", "宁",
+//                           "新",
+//                           "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+//                           "A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
+//                           "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V",
+//                           "W", "X", "Y", "Z", "I", "O", "-"
+//};
+
+// crnn使用
+static string plate_chars[76] = { "#","京", "沪", "津", "渝", "冀", "晋", "蒙", "辽", "吉", "黑",
+                                  "苏", "浙", "皖", "闽", "赣", "鲁", "豫", "鄂", "湘", "粤",
+                                  "桂", "琼", "川", "贵", "云", "藏", "陕", "甘", "青", "宁",
+                                  "新", "学", "警", "港", "澳", "挂", "使", "领", "民", "航",
+                                  "深",
+                                  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                                  "A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
+                                  "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V",
+                                  "W", "X", "Y", "Z"};
 #define ASSERT(status, ret)     if (!(status)) { return ret; }
 #define ASSERT_FALSE(status)    ASSERT(status, false)
+static string crnn_rec(const cv::Mat& bgr){
+
+    cv::Mat img = bgr;
+    //获取图片的宽
+    int w = img.cols;
+    //获取图片的高
+    int h = img.rows;
+
+    ncnn::Mat in = ncnn::Mat::from_pixels_resize(img.data, ncnn::Mat::PIXEL_BGR, w, h, 168, 48);
+    float mean[3] = { 149.94, 149.94, 149.94 };
+    float norm[3] = { 0.020319,0.020319,0.020319 };
+    //对图片进行归一化,将像素归一化到-1~1之间
+    in.substract_mean_normalize(mean, norm);
+
+    ncnn::Extractor ex = crnn.create_extractor();
+    ex.set_light_mode(true);
+    //设置线程个数
+    ex.set_num_threads(1);
+    //将图片放入到网络中,进行前向推理
+    ex.input("input.1", in);
+    ncnn::Mat feat;
+
+    //获取网络的输出结果
+    ex.extract("108", feat);
+
+    ncnn::Mat m = feat;
+    vector<string> final_plate_str{};
+
+    string finale_plate;
+    for (int q = 0; q < m.c; q++)
+    {
+        float prebs[21];
+        for (int x = 0; x < m.w; x++)  //遍历十八个车牌位置
+        {
+            const float* ptr = m.channel(q);
+            float preb[78];
+            for (int y = 0; y < m.h; y++)  //遍历68个字符串位置
+            {
+                preb[y] = ptr[x];  //将18个
+                ptr += m.w;
+            }
+            int max_num_index = max_element(preb + 0, preb + 78) - preb;
+//            cout<<"max_num_index"<<max_num_index<<endl;
+            prebs[x] = max_num_index;
+        }
+
+        //去重复、去空白a
+        vector<int> no_repeat_blank_label{};
+        int pre_c = prebs[0];
+        cout<<"pre_c"<<pre_c<<endl;
+        if (pre_c != 0) {
+            no_repeat_blank_label.push_back(pre_c);
+        }
+        for (int value : prebs)
+        {
+            if (value == 0 or value==pre_c) {
+                if (value == 0 or value == pre_c) {
+                    pre_c = value;
+                }
+                continue;
+            }
+            no_repeat_blank_label.push_back(value);
+            pre_c = value;
+        }
+
+        // 下面进行车牌lable按照字典进行转化为字符串
+        string no_repeat_blank_c = "";
+        for (int hh : no_repeat_blank_label) {
+            no_repeat_blank_c += plate_chars[hh];
+        }
+        cout << "单个车牌:" << no_repeat_blank_c << endl;
+
+        final_plate_str.push_back(no_repeat_blank_c);
+        for (string plate_char : final_plate_str) {
+            cout << "所有车牌:" << plate_char << endl;
+            finale_plate += plate_char;
+        }
+    }
+    string str = finale_plate;
+    cout << str << endl;
+    return str;
+}
 static int color_rec_1(const cv::Mat& bgr){
 //    ncnn::Net color_net;
 //
@@ -522,38 +615,38 @@ JNIEXPORT jboolean JNICALL Java_com_tencent_yolov5ncnn_YoloV5Ncnn_Init(JNIEnv* e
     colorId = env->GetFieldID(objCls, "color", "Ljava/lang/String;");
 
     // TODO: implement Init()
-    ncnn::Option opt_lpr;
-    opt_lpr.lightmode = true;
-    opt_lpr.num_threads = 4;
-    opt_lpr.blob_allocator = &g_blob_pool_allocator;
-    opt_lpr.workspace_allocator = &g_workspace_pool_allocator;
-    opt_lpr.use_packing_layout = true;
+    ncnn::Option opt_crnn;
+    opt_crnn.lightmode = true;
+    opt_crnn.num_threads = 4;
+    opt_crnn.blob_allocator = &g_blob_pool_allocator;
+    opt_crnn.workspace_allocator = &g_workspace_pool_allocator;
+    opt_crnn.use_packing_layout = true;
 
     // use vulkan compute
     if (ncnn::get_gpu_count() != 0)
-        opt_lpr.use_vulkan_compute = true;
+        opt_crnn.use_vulkan_compute = true;
 
-    lpr.opt = opt_lpr;
+    crnn.opt = opt_crnn;
 
     // init param
     {
-        int ret = lpr.load_param(mgr, "lpr2d-sim.param");
+        int ret = crnn.load_param(mgr, "crnn.param");
         if (ret != 0)
         {
-            __android_log_print(ANDROID_LOG_DEBUG, "lpr2d", "load_param failed");
+            __android_log_print(ANDROID_LOG_DEBUG, "crnn", "load_param failed");
             return JNI_FALSE;
         }
     }
 
     // init bin
     {
-        int ret = lpr.load_model(mgr, "lpr2d-sim.bin");
+        int ret = crnn.load_model(mgr, "crnn.bin");
         if (ret != 0)
         {
-            __android_log_print(ANDROID_LOG_DEBUG, "lpr2d", "load_model failed");
+            __android_log_print(ANDROID_LOG_DEBUG, "crnn", "load_model failed");
             return JNI_FALSE;
         } else{
-            __android_log_print(ANDROID_LOG_DEBUG, "lpr2d", "load_model success!");
+            __android_log_print(ANDROID_LOG_DEBUG, "crnn", "load_model success!");
         }
     }
 
@@ -800,9 +893,9 @@ JNIEXPORT jobjectArray JNICALL Java_com_tencent_yolov5ncnn_YoloV5Ncnn_Detect(JNI
         src_points[3]=cv::Point2f(new_x4, new_y4);
         //期望透视变换后二维码四个角点的坐标
         dst_points[0]=cv::Point2f(0.0, 0.0);
-        dst_points[1]=cv::Point2f(94.0, 0.0);
-        dst_points[2]=cv::Point2f(0.0, 24.0);
-        dst_points[3]=cv::Point2f(94.0, 24.0);
+        dst_points[1]=cv::Point2f(168.0, 0.0);
+        dst_points[2]=cv::Point2f(0.0, 48.0);
+        dst_points[3]=cv::Point2f(168.0, 48.0);
 
         cv::Mat rotation,img_warp;
         cv::Rect_<float> rect;
@@ -813,73 +906,9 @@ JNIEXPORT jobjectArray JNICALL Java_com_tencent_yolov5ncnn_YoloV5Ncnn_Detect(JNI
         cv::Mat ROI = image(rect);
         rotation=getPerspectiveTransform(src_points,dst_points);
 //        cout<<"image.size():"<<image.size()<<endl;
-        warpPerspective(ROI,ROI,rotation,cv::Size(94, 24));
-//        ncnn::Mat in = ncnn::Mat::from_android_bitmap_resize(env, bitmap, ncnn::Mat::PIXEL_BGR, 94, 24);
-        ncnn::Mat in = ncnn::Mat::from_pixels(ROI.data, ncnn::Mat::PIXEL_BGR, 94, 24);
-        float mean[3] = { 127.5, 127.5, 127.5 };
-        float norm[3] = { 0.0078125,0.0078125,0.0078125 };
+        warpPerspective(ROI,ROI,rotation,cv::Size(168, 48));
 
-        in.substract_mean_normalize(mean, norm);
-        ncnn::Extractor ex = lpr.create_extractor();
-        ex.set_light_mode(true);
-        ex.set_num_threads(1);
-
-        ex.input("input.1", in);
-
-        ncnn::Mat feat;
-        ex.extract("131", feat);
-        ncnn::Mat m = feat;
-        string finale_plate="";
-        vector<string> final_plate_str{};
-        for (int q = 0; q < m.c; q++)
-        {
-            float prebs[18];
-            for (int x = 0; x < m.w; x++)  //遍历十八个车牌位置
-            {
-                const float* ptr = m.channel(q);
-                float preb[68];
-                for (int y = 0; y < m.h; y++)  //遍历68个字符串位置
-                {
-                    printf("%f ", ptr[x]);
-                    preb[y] = ptr[x];  //将18个
-                    ptr += m.w;
-                }
-                int max_num_index = max_element(preb, preb + 68) - preb;
-                prebs[x] = max_num_index;
-            }
-
-            //去重复、去空白
-            vector<int> no_repeat_blank_label{};
-            int pre_c = prebs[0];
-            if (pre_c != 67) {
-                no_repeat_blank_label.push_back(pre_c);
-            }
-            for (int value : prebs)
-            {
-                if (value == 67 or value==pre_c) {
-                    if (value == 67 or value == pre_c) {
-                        pre_c = value;
-                    }
-                    continue;
-                }
-                no_repeat_blank_label.push_back(value);
-                pre_c = value;
-            }
-
-            // 下面进行车牌lable按照字典进行转化为字符串
-            string no_repeat_blank_c = "";
-            for (int hh : no_repeat_blank_label) {
-                no_repeat_blank_c += plate_chars[hh];
-            }
-            cout << "单个车牌:" << no_repeat_blank_c << endl;
-            __android_log_print(ANDROID_LOG_DEBUG, "lpr2d-sim", "load_model success!");
-            final_plate_str.push_back(no_repeat_blank_c);
-            for (string hhh : final_plate_str) {
-                cout << "所有车牌:" << hhh << endl;
-                finale_plate += hhh;
-            }
-        }
-        string plate_str=finale_plate;
+        string plate_str=crnn_rec(ROI);
         string color_names[3] = {
 //                "blue", "green","yellow"
                 "蓝", "绿", "黄"

@@ -1,2 +1,0 @@
-ninja: Entering directory `D:\to_rockey\github_pro\Chinese-License-Plate-Recognition\Chinese-License-Plate-Recognition-ncnn-android\ncnn-android-yolov5-master\app\.cxx\cmake\debug\x86_64'
-ninja: no work to do.
