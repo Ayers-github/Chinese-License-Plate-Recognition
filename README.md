@@ -15,6 +15,6 @@ minSdkVersion:24
 ndk:24.0.8215888
 cmake:3.10.2
 
-tips：需要在CPP文件中修改下包路径为自己的包路径
+tips：需要在yolov5ncnn_jnitest.cpp文件中修改包路径为自己的包路径，一共有四处（可以通过搜索tencent找到这四处)
 
 如果需要在其他项目中使用车牌识别模块，直接调用PlateRecognition.java类即可。
