@@ -49,18 +49,18 @@ static ncnn::Net color_net;
 //};
 
 // crnn使用
-static string plate_chars[76] = { "#","京", "沪", "津", "渝", "冀", "晋", "蒙", "辽", "吉", "黑",
-                                  "苏", "浙", "皖", "闽", "赣", "鲁", "豫", "鄂", "湘", "粤",
-                                  "桂", "琼", "川", "贵", "云", "藏", "陕", "甘", "青", "宁",
-                                  "新", "学", "警", "港", "澳", "挂", "使", "领", "民", "航",
-                                  "深",
-                                  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
-                                  "A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
-                                  "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V",
-                                  "W", "X", "Y", "Z"};
+string plate_chars[78] = { "#","京", "沪", "津", "渝", "冀", "晋", "蒙", "辽", "吉", "黑",
+                           "苏", "浙", "皖", "闽", "赣", "鲁", "豫", "鄂", "湘", "粤",
+                           "桂", "琼", "川", "贵", "云", "藏", "陕", "甘", "青", "宁",
+                           "新", "学", "警", "港", "澳", "挂", "使", "领", "民", "航",
+                           "危",
+                           "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                           "A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
+                           "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V",
+                           "W", "X", "Y", "Z", "险", "品"};
 #define ASSERT(status, ret)     if (!(status)) { return ret; }
 #define ASSERT_FALSE(status)    ASSERT(status, false)
-static string crnn_rec(const cv::Mat& bgr){
+static vector<string> crnn_rec(const cv::Mat& bgr){
 
     cv::Mat img = bgr;
     //获取图片的宽
@@ -79,27 +79,36 @@ static string crnn_rec(const cv::Mat& bgr){
     //设置线程个数
     ex.set_num_threads(1);
     //将图片放入到网络中,进行前向推理
-    ex.input("input.1", in);
-    ncnn::Mat feat;
-
+    ex.input("images", in);
+    ncnn::Mat feat_plate;
+    ncnn::Mat feat_color;
+//    color = ['黑色', '蓝色', '绿色', '白色', '黄色']
     //获取网络的输出结果
-    ex.extract("108", feat);
+    ex.extract("129", feat_plate);
+    ex.extract("output_2", feat_color);
 
-    ncnn::Mat m = feat;
+//    int color_index =  max_element(feat_color + 0, feat_color + 78) - feat_color;
+    cout<<feat_color.c<<endl;
+    cout<<feat_color.h<<endl;
+    cout<<feat_color.w<<endl;
+//    pretty_print(feat_color);
+
+    ncnn::Mat plate_mat = feat_plate;
+    ncnn::Mat color_mat = feat_color;
     vector<string> final_plate_str{};
 
     string finale_plate;
-    for (int q = 0; q < m.c; q++)
+    for (int q = 0; q < plate_mat.c; q++)
     {
         float prebs[21];
-        for (int x = 0; x < m.w; x++)  //遍历十八个车牌位置
+        for (int x = 0; x < plate_mat.w; x++)  //遍历十八个车牌位置
         {
-            const float* ptr = m.channel(q);
+            const float* ptr = plate_mat.channel(q);
             float preb[78];
-            for (int y = 0; y < m.h; y++)  //遍历68个字符串位置
+            for (int y = 0; y < plate_mat.h; y++)  //遍历68个字符串位置
             {
                 preb[y] = ptr[x];  //将18个
-                ptr += m.w;
+                ptr += plate_mat.w;
             }
             int max_num_index = max_element(preb + 0, preb + 78) - preb;
 //            cout<<"max_num_index"<<max_num_index<<endl;
@@ -140,54 +149,80 @@ static string crnn_rec(const cv::Mat& bgr){
     }
     string str = finale_plate;
     cout << str << endl;
-    return str;
-}
-static int color_rec_1(const cv::Mat& bgr){
-//    ncnn::Net color_net;
-//
-//    color_net.load_param("color-sim.param");
-//    color_net.load_model("color-sim.bin");
-    //获取图片的宽
-    int w = bgr.cols;
-    //获取图片的高
-    int h = bgr.rows;
 
-    ncnn::Mat in = ncnn::Mat::from_pixels_resize(bgr.data, ncnn::Mat::PIXEL_BGR2RGB, w, h, 34, 9);
-
-    const float norm_vals[3] = { 1.f / (0.2569 * 255), 1.f / (0.2478 * 255), 1.f / (0.2174 * 255)};
-
-    const float mean_vals[3] = { 0.4243f * 255.f, 0.4947f * 255.f, 0.434f * 255.f};
-
-    in.substract_mean_normalize(mean_vals, norm_vals);
-
-    ncnn::Extractor ex = color_net.create_extractor();
-    //将图片放入到网络中,进行前向推理
-    ex.input("input.1", in);
-    ncnn::Mat feat_color;
-    ex.extract("14", feat_color);
-    ncnn::Mat m = feat_color;
-    float color_result[3];
-    for (int q = 0; q < m.c; q++)
+    float color_result[5];
+    for (int q = 0; q < color_mat.c; q++)
     {
-        const float* ptr = m.channel(q);
-        for (int y = 0; y < m.h; y++)
+        const float* ptr = color_mat.channel(q);
+        for (int y = 0; y < color_mat.h; y++)
         {
 
-            for (int x = 0; x < m.w; x++)
+            for (int x = 0; x < color_mat.w; x++)
             {
-                printf("%f ", ptr[x]);
+//                printf("%f ", ptr[x]);
                 //cout << "1111:" << ptr[x];
                 color_result[x] = ptr[x];
             }
-            ptr += m.w;
-            printf("\n");
+            ptr += color_mat.w;
+//            printf("\n");
         }
         printf("------------------------\n");
     }
-    int color_code = max_element(color_result, color_result + 3) - color_result;
-
-    return color_code;
+    int color_code = max_element(color_result, color_result + 5) - color_result;
+    string color_names[5] = {
+            "黑色", "蓝色", "绿色", "白色", "黄色"
+    };
+    vector<string> plate_color(2);
+    plate_color[0] = str;
+    plate_color[1] = color_names[color_code];
+    return plate_color;
 }
+//static int color_rec_1(const cv::Mat& bgr){
+////    ncnn::Net color_net;
+////
+////    color_net.load_param("color-sim.param");
+////    color_net.load_model("color-sim.bin");
+//    //获取图片的宽
+//    int w = bgr.cols;
+//    //获取图片的高
+//    int h = bgr.rows;
+//
+//    ncnn::Mat in = ncnn::Mat::from_pixels_resize(bgr.data, ncnn::Mat::PIXEL_BGR2RGB, w, h, 34, 9);
+//
+//    const float norm_vals[3] = { 1.f / (0.2569 * 255), 1.f / (0.2478 * 255), 1.f / (0.2174 * 255)};
+//
+//    const float mean_vals[3] = { 0.4243f * 255.f, 0.4947f * 255.f, 0.434f * 255.f};
+//
+//    in.substract_mean_normalize(mean_vals, norm_vals);
+//
+//    ncnn::Extractor ex = color_net.create_extractor();
+//    //将图片放入到网络中,进行前向推理
+//    ex.input("input.1", in);
+//    ncnn::Mat feat_color;
+//    ex.extract("14", feat_color);
+//    ncnn::Mat m = feat_color;
+//    float color_result[3];
+//    for (int q = 0; q < m.c; q++)
+//    {
+//        const float* ptr = m.channel(q);
+//        for (int y = 0; y < m.h; y++)
+//        {
+//
+//            for (int x = 0; x < m.w; x++)
+//            {
+//                printf("%f ", ptr[x]);
+//                //cout << "1111:" << ptr[x];
+//                color_result[x] = ptr[x];
+//            }
+//            ptr += m.w;
+//            printf("\n");
+//        }
+//        printf("------------------------\n");
+//    }
+//    int color_code = max_element(color_result, color_result + 3) - color_result;
+//
+//    return color_code;
+//}
 bool BitmapToMatrix(JNIEnv * env, jobject obj_bitmap, cv::Mat & matrix) {
     void * bitmapPixels;                                            // Save picture pixel data
     AndroidBitmapInfo bitmapInfo;                                   // Save picture parameters
@@ -630,23 +665,23 @@ JNIEXPORT jboolean JNICALL Java_com_tencent_yolov5ncnn_YoloV5Ncnn_Init(JNIEnv* e
 
     // init param
     {
-        int ret = crnn.load_param(mgr, "crnn.param");
+        int ret = crnn.load_param(mgr, "plate_rec_color.param");
         if (ret != 0)
         {
-            __android_log_print(ANDROID_LOG_DEBUG, "crnn", "load_param failed");
+            __android_log_print(ANDROID_LOG_DEBUG, "plate_rec_color", "load_param failed");
             return JNI_FALSE;
         }
     }
 
     // init bin
     {
-        int ret = crnn.load_model(mgr, "crnn.bin");
+        int ret = crnn.load_model(mgr, "plate_rec_color.bin");
         if (ret != 0)
         {
-            __android_log_print(ANDROID_LOG_DEBUG, "crnn", "load_model failed");
+            __android_log_print(ANDROID_LOG_DEBUG, "plate_rec_color", "load_model failed");
             return JNI_FALSE;
         } else{
-            __android_log_print(ANDROID_LOG_DEBUG, "crnn", "load_model success!");
+            __android_log_print(ANDROID_LOG_DEBUG, "plate_rec_color", "load_model success!");
         }
     }
 
@@ -664,27 +699,27 @@ JNIEXPORT jboolean JNICALL Java_com_tencent_yolov5ncnn_YoloV5Ncnn_Init(JNIEnv* e
 
     color_net.opt = opt_color;
 
-    // init param
-    {
-        int ret = color_net.load_param(mgr, "color-sim.param");
-        if (ret != 0)
-        {
-            __android_log_print(ANDROID_LOG_DEBUG, "color_classify", "load_param failed");
-            return JNI_FALSE;
-        }
-    }
-
-    // init bin
-    {
-        int ret = color_net.load_model(mgr, "color-sim.bin");
-        if (ret != 0)
-        {
-            __android_log_print(ANDROID_LOG_DEBUG, "color_classify", "load_model failed");
-            return JNI_FALSE;
-        } else{
-            __android_log_print(ANDROID_LOG_DEBUG, "color_classify", "load_model success!");
-        }
-    }
+//    // init param
+//    {
+//        int ret = color_net.load_param(mgr, "color-sim.param");
+//        if (ret != 0)
+//        {
+//            __android_log_print(ANDROID_LOG_DEBUG, "color_classify", "load_param failed");
+//            return JNI_FALSE;
+//        }
+//    }
+//
+//    // init bin
+//    {
+//        int ret = color_net.load_model(mgr, "color-sim.bin");
+//        if (ret != 0)
+//        {
+//            __android_log_print(ANDROID_LOG_DEBUG, "color_classify", "load_model failed");
+//            return JNI_FALSE;
+//        } else{
+//            __android_log_print(ANDROID_LOG_DEBUG, "color_classify", "load_model success!");
+//        }
+//    }
 
     return JNI_TRUE;
 }
@@ -907,14 +942,16 @@ JNIEXPORT jobjectArray JNICALL Java_com_tencent_yolov5ncnn_YoloV5Ncnn_Detect(JNI
         rotation=getPerspectiveTransform(src_points,dst_points);
 //        cout<<"image.size():"<<image.size()<<endl;
         warpPerspective(ROI,ROI,rotation,cv::Size(168, 48));
-
-        string plate_str=crnn_rec(ROI);
-        string color_names[3] = {
-//                "blue", "green","yellow"
-                "蓝", "绿", "黄"
-        };
-        int color_code = color_rec_1(ROI);
-        string color_name = color_names[color_code];
+        vector<string> plate_color_result(2);
+        plate_color_result = crnn_rec(ROI);
+        string plate_str=plate_color_result[0];
+//        string color_names[3] = {
+////                "blue", "green","yellow"
+//                "蓝", "绿", "黄"
+//        };
+//        int color_code = color_rec_1(ROI);
+//        string color_name = color_names[color_code];
+        string color_name = plate_color_result[1];
 
         char*p=(char*)plate_str.data();
         char*p_color=(char*)color_name.data();
